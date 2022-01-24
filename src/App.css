@@ -1,38 +1,79 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background gradient for app */
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  /* sizing for apps */
+  height: 100vh;
+  /* content layout specifications */
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+.header {
+  /* header size */
+  height: 4rem;
+  width: 100%;
+  /* line at bottom of header */
+  border-bottom: 2px solid white;
+  /* header layout specs */
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0 1rem;
+  /* header color */
+  background: rgba(205, 97, 255, 0.3);
+}
+.logo {
+  /* logo size */
+  height: 3.5rem;
+  width: 3.5rem;
+  /* image link */
+  background: url("https://www.kindpng.com/picc/m/5-53567_collection-of-lavender-butterfly-clipart-high-quality-cute.png");
+  /* logo position */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* circle cutout */
+  border-radius: 50%;
+  /* logo border */
+  border: 1px solid white;
+}
+.title {
+  /* header text specifications */
+  color: white;
+  font-family: 'Righteous', cursive;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+.footer {
+  /* chat text enter thing specs */
+  height: 4rem;
+  width: 100%;
+  border-top: 2px solid white;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+.text-input {
+  /* chat text specs */
+  width: 100%;
+  border: 1px solid white;
+  height: 2rem;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  background: rgba(205, 97, 255, 0.3);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.send {
+  /* enter arrow specs */
+  background: white;
+  border-radius: 50%;
+  border: none;
+  height: 1.7rem;
+  width: 1.7rem;
+  position: absolute;
+  right: 1.15rem;
+  cursor: pointer;
 }
