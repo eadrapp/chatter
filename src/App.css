@@ -45,35 +45,35 @@
   font-size: 2rem;
   margin-left: 1rem;
 }
-.footer {
-  /* chat text enter thing specs */
-  height: 4rem;
-  width: 100%;
-  border-top: 2px solid white;
+.messages {
   display: flex;
-  align-items: center;
-  padding: 0 1rem;
-  background: rgba(255, 255, 255, 0.3);
-  position: relative;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  overflow: auto;
+  max-height: calc(100vh - 4rem - 4rem);
+  min-height: calc(100vh - 4rem - 4rem);
+  padding: 1rem;
 }
-.text-input {
-  /* chat text specs */
-  width: 100%;
-  border: 1px solid white;
-  height: 2rem;
-  border-radius: 1rem;
-  padding: 0 1rem;
-  background: rgba(205, 97, 255, 0.3);
+.message {
   color: white;
+  position:relative;
+  border-radius:0.8em;
+  background: rgba(205, 97, 255, 0.7);
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
 }
-.send {
-  /* enter arrow specs */
-  background: white;
-  border-radius: 50%;
-  border: none;
-  height: 1.7rem;
-  width: 1.7rem;
-  position: absolute;
-  right: 1.15rem;
-  cursor: pointer;
+
+.message:after {
+  content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 0.5em solid transparent;
+	border-right-color: rgba(205, 97, 255, 0.7);
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -0.25em;
+	margin-left: -0.5em;
 }
