@@ -9,7 +9,7 @@ function App() {
     const newMessage = {
       text,
       time: Date.now(),
-      user: "Evan",
+      user: "Emma",
     };
     setMessages([newMessage, ...messages]);
   }
