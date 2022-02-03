@@ -24,7 +24,7 @@
     color: white;
   }
 .send {
-    /* enter arrow specs */
+    /* send arrow specs */
     background: white;
     border-radius: 50%;
     border: none;
@@ -38,7 +38,7 @@
     justify-content: center;
   }
   .camera {
-    /* enter arrow specs */
+    /* camera button specs */
     background: white;
     border-radius: 50%;
     border: none;
@@ -53,10 +53,12 @@
     justify-content: center;
   }
    .send:hover {
+     /* send hover specs */
     background: #8EC5FC;
     border: 1px solid white;
   }
   .camera:hover {
+    /* camera hover specs */
     background: #8EC5FC;
     border: 1px solid white;
   }
