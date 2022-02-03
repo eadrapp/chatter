@@ -1,5 +1,6 @@
 import "./TextInput.css";
 import { useState } from "react";
+import { RiSendPlaneLine, RiCamera2Line } from "react-icons/ri";
 
 function TextInput(props) {
   const [text, setText] = useState("");
@@ -16,6 +17,10 @@ function TextInput(props) {
 
   return (
     <footer className="footer">
+      <button className="camera" onClick={props.showCamera}
+        style={{left:10, right:'auto'}}>
+        <RiCamera2Line style={{height:18, width:18}} />
+      </button>
       <input
         className="text-input"
         value={text}
@@ -23,7 +28,7 @@ function TextInput(props) {
         onKeyPress={onKeyPress}
       />
       <button className="send" onClick={send}>
-        ↑
+        <RiSendPlaneLine style={{height:18, width:18}} />
       </button>
     </footer>
   );
