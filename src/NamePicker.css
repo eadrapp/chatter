@@ -1,0 +1,51 @@
+  .user {
+    /* username button specs */
+    color:white;
+    width: calc(100% + 0.1rem);
+    background:none;
+    border:none;
+    margin-left: 0.5rem;
+    left: 2rem;
+    cursor: pointer;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+  }
+
+  .username-input {
+    /* username text specs */
+    width:10rem;
+    border: 1px solid white;
+    height: 2rem;
+    border-radius: 1rem;
+    margin-left: 2rem;
+    padding: 0 1rem;
+    background: rgba(205, 97, 255, 0.3);
+    color: white;
+  }
+  .go {
+    /* username button specs */
+    background: white;
+    border: none;
+    border-radius: 1rem;
+    height: 1.7rem;
+    width: 3rem;
+    margin-left: 0.5rem;
+    left: 2rem;
+    cursor: pointer;
+    color: rgba(205, 97, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.75rem;
+  }
+
+  .hidden {
+      display: none;
+  }
+
+  .icon{
+    height: 1rem;
+    width: 1rem;
+  }
