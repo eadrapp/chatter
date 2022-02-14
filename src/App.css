@@ -52,22 +52,33 @@
   flex-direction: column-reverse;
   align-items: flex-start;
   overflow: auto;
-  max-height: calc(100vh - 4rem - 4rem);
-  min-height: calc(100vh - 4rem - 4rem);
-  padding: 1rem;
+  flex: 1;
+}
+.message-row {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  flex-direction: row;
 }
 .message {
   /* message bubble specs */
   color: white;
-  position:relative;
-  border-radius:0.8em;
   background: rgba(205, 97, 255);
   padding: 0.5rem 1rem;
-  margin: 0.2rem;
-  min-height:2.2rem;
+  margin: 0.5rem;
+  border-radius: 0.3rem;
+  max-width: 20rem;
+  min-height: auto;
+  overflow-wrap: break-word;
+  position: relative;
 }
-
-.message:after {
+.message-user {
+  position: absolute;
+  left: 0;
+  top: -0.8rem;
+  font-size: 0.5rem;
+}
+.message:before {
   /* message bubble triangle */
   content: '';
 	position: absolute;
@@ -82,7 +93,15 @@
 	margin-top: -0.25em;
 	margin-left: -0.45em;
 }
-
+.name-picker {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+.name-picker svg {
+  stroke: white;
+  cursor: pointer;
+}
 .username{
   position: absolute;
   right:2rem;

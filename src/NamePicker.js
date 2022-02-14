@@ -2,55 +2,38 @@ import { useState } from "react";
 import "./NamePicker.css";
 import { RiUserLine } from "react-icons/ri";
 
+
 function NamePicker(props) {
-    const [name, setName] = useState('Set Username')
+    const [name, setName] = useState("");
 
-    function showInput(){
-        document.getElementById('user').className = 'hidden'
-        document.getElementById('username-input').className = ''
-    }
-
-    function hideInput(){
-        document.getElementById('user').className = 'user'
-        document.getElementById('username-input').className = 'hidden'
-    }
+    const [showInput, setShowInput] = useState(false);
 
     function send() {
         props.setUsername(name);
-        setName("");
+        setShowInput(false);
       }
       
-    function onClick() {
-        hideInput();
-        send();
-    }
-
-    function onKeyPress(e) {
-        if (e.key === "Enter") {
-            hideInput();
-            send();
-        }
-      }
-
-    return(
-        <div>
-            <button id="user" class="user" onClick={showInput}>
-                {name}
-                <RiUserLine class="icon" />
-            </button>
-            <div id="username-input" className='hidden'>
-                <input
-                class="username-input"
-                onChange={(e) => setName(e.target.value)}
-                onKeyPress={onKeyPress}
-                />
-                <button class="go"
-                onClick={onClick}>
+    if (showInput) {
+        return(
+        <div className="name-picker">
+            <input
+            className="username-input"
+            onChange={(e) => setName(e.target.value)}
+            value={name}
+            />
+            <button class="go" onClick={send}>
                     Ok!
-                </button>
-            </div>
+            </button>
         </div>
     );
     }
+
+    return (
+        <div className="name-picker">
+          <span className="user">{name || "Set Username:"}</span>
+          <RiUserLine className="icon" onClick={() => setShowInput(true)} />
+        </div>
+      );
+}
 
 export default NamePicker

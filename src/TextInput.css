@@ -1,68 +1,68 @@
 .footer {
-    /* chat text enter thing specs */
-    height: 4rem;
-    width: 100%;
-    border-top: 2px solid white;
-    display: flex;
-    align-items: center;
-    padding: 0 1rem;
-    background: rgba(255, 255, 255, 0.3);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
+  /* chat text enter thing specs */
+  height: 4rem;
+  width: 100%;
+  border-top: 2px solid white;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 .text-input {
-    /* chat text specs */
-    width:calc(100% - 3rem);
-    border: 1px solid white;
-    height: 2rem;
-    border-radius: 1rem;
-    margin-left: 2rem;
-    padding: 0 1rem;
-    background: rgba(205, 97, 255, 0.3);
-    color: white;
-  }
+  /* chat text specs */
+  width:calc(100% - 3rem);
+  border: 1px solid white;
+  height: 2rem;
+  border-radius: 1rem;
+  margin-left: 2rem;
+  padding: 0 1rem;
+  background: rgba(205, 97, 255, 0.3);
+  color: white;
+}
 .send {
-    /* send arrow specs */
-    background: white;
-    border-radius: 50%;
-    border: none;
-    height: 1.7rem;
-    width: 1.7rem;
-    position: absolute;
-    right: 1.6rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .camera {
-    /* camera button specs */
-    background: white;
-    border-radius: 50%;
-    border: none;
-    height: 1.7rem;
-    width: 1.7rem;
-    position: absolute;
-    margin-left: 0.5rem;
-    left: 2rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-   .send:hover {
-     /* send hover specs */
-    background: #8EC5FC;
-    border: 1px solid white;
-  }
-  .camera:hover {
-    /* camera hover specs */
-    background: #8EC5FC;
-    border: 1px solid white;
-  }
-  .icon{
-    height: 2rem;
-    width: 2rem;
-  }
+  /* send arrow specs */
+  background: white;
+  border-radius: 50%;
+  border: none;
+  height: 1.7rem;
+  width: 1.7rem;
+  position: absolute;
+  right: 1.6rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.camera {
+  /* camera button specs */
+  background: white;
+  border-radius: 50%;
+  border: none;
+  height: 1.7rem;
+  width: 1.7rem;
+  position: absolute;
+  margin-left: 0.5rem;
+  left: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .send:hover {
+   /* send hover specs */
+  background: #8EC5FC;
+  border: 1px solid white;
+}
+.camera:hover {
+  /* camera hover specs */
+  background: #8EC5FC;
+  border: 1px solid white;
+}
+.icon{
+  height: 2rem;
+  width: 2rem;
+}
